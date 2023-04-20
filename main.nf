@@ -163,6 +163,7 @@ process expansion_hunter {
   script:
     sex = sex == '' ? 'female' : sex
     """
+    exit 143
     # ensure we can't use ENA ref server
     export REF_PATH=:
     ExpansionHunter \
